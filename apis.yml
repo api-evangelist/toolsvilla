@@ -1,7 +1,23 @@
 aid: toolsvilla
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/toolsvilla.png
 name: Toolsvilla
-description: Toolsvilla is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Toolsvilla is an India-based e-commerce marketplace for machinery, tools, and equipment,
+  positioning itself as one of India's largest online stores for industrial, agricultural, and power
+  tools serving small businesses, farmers, and trade buyers. It was surfaced as a Techstars portfolio
+  company and added to the API Evangelist network for enrichment. No public developer API,
+  documentation, or SDKs were found during this enrichment pass; the site's internal backend at
+  api.toolsvilla.com is undocumented and returns a bare JSON response.
 url: https://raw.githubusercontent.com/api-evangelist/toolsvilla/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- E-commerce
+- Retail
+- Marketplace
+- Machinery
+- Tools
+- Equipment
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/toolsvilla-domain-security.yml
 - type: Website
   url: https://toolsvilla.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
